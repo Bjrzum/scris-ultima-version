@@ -1,0 +1,40 @@
+@import 'colores';
+@import 'mixin';
+
+.container-cargando {
+    @include position(fixed);
+    background-color: $opacidadOscuro;
+    @include flex(column);
+
+    .carga {
+        @include flex(row);
+
+        .barra {
+            display: inline-block;
+            position: relative;
+            width: 200px;
+            height: 25px;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid $blanco;
+
+            .barra-carga {
+                display: inline-block;
+                @include position(absolute);
+                width: 0;
+                background-color: $blanco;
+                border-radius: 5px;
+            }
+        }
+
+    }
+
+    .text-carga {
+        h4 {
+            color: $blanco;
+            font-weight: 500;
+            font-size: 1rem;
+            margin: .5em;
+        }
+    }
+}
