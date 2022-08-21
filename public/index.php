@@ -15,7 +15,7 @@ echo Head('', 'SCRIS | Login', $array_styles);
     </form>
 </div>
 
-
+?>
 <script>
     <?php include_once 'js/index.js';
     ?>

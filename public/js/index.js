@@ -5,11 +5,11 @@ $('#pin').keyup(function(){
             url: 'packages/events/login.php',
             type: 'POST',
             data: {
-                pin: pin
+                pin2: pin
             },
             success: function(data){
                 if(data == 'success'){
-                    window.location.href = 'inicio.php';
+                    window.location.href = 'ingresos.php';
                 }
             }
         });
